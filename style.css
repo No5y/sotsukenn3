@@ -14,8 +14,8 @@
      "AreaB AreaC AreaD"
      "AreaB AreaE AreaE";
   width: 84%;
-  max-width: 1920px;
-  min-width: 1080px;
+  max-width: 1080px;
+  min-width: 720px;
   margin: 0 auto;
 }
 
