@@ -1,8 +1,15 @@
+
+
+
+
+
 const picArray = [
-{src: './images/picture_2.jpg', title: 'Spring'},
-{src: './images/picture_3.jpg', title: 'Summer'},
-{src: './images/picture_4.jpg', title: 'Fall'},
-{src: './images/picture_5.jpg', title: 'Winter'}
+{src: "./images/illustration.jpg", title:訪れ},
+{src: "./images/illustration2.jpg", title:哀愁},
+{src: "./images/illustration3.jpg", title: '振り返って'},
+{src: "./images/illustration4.jpg", title: '欲しがり'}
+{src: "./images/illustration4.jpg", title: '儚い恋'}
+  
 ];
 
 let counter = 0;
