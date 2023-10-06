@@ -1,40 +1,40 @@
 
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+</head>
+<body>
 
 
 
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
 
-const picArray = [
-{src: "images/illustration.jpg", title:訪れ},
-{src: "images/illustration2.jpg", title:哀愁},
-{src: "images/illustration3.jpg", title: '振り返って'},
-{src: "images/illustration4.jpg", title: '欲しがり'}
-{src: "images/illustration4.jpg", title: '儚い恋'}
-  
-];
+<script type="text/javascript">
+        $(document).ready(function(){
+            $('.slider').bxSlider({
+                auto: true,
+                pause: 5000,
+            });
+        });
+</script>
 
-let counter = 0;
 
-function changePicture() {
-  if (counter < picArray.length) {
-    document.getElementById('pics').src = picArray[counter].src;
-    document.getElementById('pic-title').innerHTML = picArray[counter].title;
-    counter++;
-  } else {
-    document.getElementById('pics').src = picArray[0].src;
-    document.getElementById('pic-title').innerHTML = picArray[0].title;
-    counter = 1;
-  } 
-}
+</body>
+</html>
 
-let playingID = 0;
 
-function playSlidedeshow () {
-  if (playingID == 0) {
-    document.getElementById('playButton').innerHTML = 'STOP';
-    playingID = setInterval(changePicture, 2000);
-  } else {
-    document.getElementById('playButton').innerHTML = 'START';
-    clearInterval(playingID);
-    playingID = 0;
-  }
-}
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+<script type="text/javascript">
+        $(document).ready(function(){
+            $('.slider').bxSlider({
+                auto: true,
+                pause: 5000,
+            });
+        });
+</script>
