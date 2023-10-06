@@ -4,11 +4,11 @@
 
 
 const picArray = [
-{src: "./images/illustration.jpg", title:訪れ},
-{src: "./images/illustration2.jpg", title:哀愁},
-{src: "./images/illustration3.jpg", title: '振り返って'},
-{src: "./images/illustration4.jpg", title: '欲しがり'}
-{src: "./images/illustration4.jpg", title: '儚い恋'}
+{src: "images/illustration.jpg", title:訪れ},
+{src: "images/illustration2.jpg", title:哀愁},
+{src: "images/illustration3.jpg", title: '振り返って'},
+{src: "images/illustration4.jpg", title: '欲しがり'}
+{src: "images/illustration4.jpg", title: '儚い恋'}
   
 ];
 
