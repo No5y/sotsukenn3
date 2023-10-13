@@ -17,22 +17,17 @@
     
 
     <style>
-        .slideshow-container {
-            max-width: 800px;
-            position: relative;
-            margin: auto;
+        /* スライドショーのスタイルを設定 */
+        #slideshow {
+            width: 400px;
+            height: 300px;
+            overflow: hidden;
         }
-
-        .mySlides {
-            display: none;
-        }
-
-        img {
+        #slideshow img {
             width: 100%;
-            height: auto;
+            height: 100%;
         }
-    </style>    
-
+    </style>
 
 
     
@@ -126,6 +121,32 @@
     <footer>
        &copy; http://www.example.com
     </footer>
+
+
+
+    <script>
+        // 画像のリストと現在の画像のインデックスを追跡
+        var images = document.querySelectorAll('#slideshow img');
+        var currentImageIndex = 0;
+
+        // 画像の切り替え関数
+        function switchImage() {
+            // 現在の画像を非表示にする
+            images[currentImageIndex].style.display = 'none';
+
+            // 次の画像のインデックスを計算
+            currentImageIndex = (currentImageIndex + 1) % images.length;
+
+            // 次の画像を表示する
+            images[currentImageIndex].style.display = 'block';
+        }
+
+        // スライドショーのタイマーをセットアップ
+        setInterval(switchImage, 2000); // 2000ミリ秒（2秒）ごとに画像を切り替える
+
+        // 最初の画像を表示
+        images[currentImageIndex].style.display = 'block';
+    </script>           
 
 
 
